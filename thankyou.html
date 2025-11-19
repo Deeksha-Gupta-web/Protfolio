@@ -1,17 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thank You | Deeksha's Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <title>Thank You | Deeksha Gupta Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #fffdd0 0%, #ffb6c1 100%);
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #444;
+    }
+    .container {
+      background: rgba(255,255,255,0.96);
+      border-radius: 20px;
+      max-width: 400px;
+      width: 100%;
+      padding: 40px 24px 30px 24px;
+      box-shadow: 0 6px 20px rgba(220,145,180,0.10), 0 1.5px 5px rgba(212,175,55,0.06);
+      text-align: center;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: #D480A0;
+      font-size: 2.1em;
+      margin-bottom: 12px;
+    }
+    .icon {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 14px auto;
+      display: block;
+      fill: #E6B6D2;
+      filter: drop-shadow(0 3px 15px #ffb6c170);
+    }
+    p {
+      font-size: 1.10em;
+      margin-bottom: 27px;
+      margin-top: 0;
+      color: #7A589E;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 32px;
+      background: linear-gradient(90deg, #e6e6fa, #ffb6c1);
+      color: #67505D;
+      border: none;
+      border-radius: 28px;
+      font-weight: 700;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+      box-shadow: 0 2px 10px rgba(212,175,55,0.07);
+    }
+    .button:hover, .button:focus {
+      background: linear-gradient(90deg,#d4af37 10%,#e6e6fa 90%);
+      color: #D480A0;
+      outline: none;
+    }
+    @media (max-width: 480px) {
+      .container {
+        padding: 24px 6px 18px 6px;
+      }
+      h1 {
+        font-size: 1.45em;
+      }
+      .icon {
+        width: 52px;
+        height: 52px;
+      }
+      .button {
+        padding: 10px 14px;
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="thankyou-container">
-    <h1>Thank You! 🚀</h1>
-    <p>Your message has been sent.<br>
-    I appreciate you reaching out and will get back to you soon!</p>
+  <div class="container">
+    <!-- SVG Checkmark Icon for positive feedback -->
+    <svg class="icon" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="30" fill="#fff7fa" stroke="#e6b6d2" stroke-width="4"/>
+      <polyline points="18,34 29,46 46,20" fill="none" stroke="#d480a0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h1>Thank You!</h1>
+    <p>Your message has been sent. Deeksha will get back to you soon.<br><br>Have a beautiful day ✨</p>
     <a href="https://github.com/Deeksha-Gupta-web/Protfolio.git/">← Back to Portfolio</a>
   </div>
 </body>
+
 </html>
