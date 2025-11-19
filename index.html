@@ -385,7 +385,10 @@
             </div>
             <div class="contact-form">
                 <h3 style="margin-bottom: 1.5rem; color: var(--dark-text);">Send Me a Message</h3>
-                <form id="contactform" action="https://formsubmit.co/deekshaguptawebdesgin@gmail.com" method="POST">
+                <form id="contactform"
+                      action="https://formsubmit.co/deekshaguptawebdesgin@gmail.com"
+                      method="POST"
+                      onsubmit="return validateForm(event)">
                     <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" id="name" name="name" required>
@@ -398,9 +401,9 @@
                         <label for="message">Your Message</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">
-                        <a href="https://deeksha-gupta-web.github.io/Protfolio/thankyou.html"> Message</a>
-                    </button>
+                    <!-- Hidden input to redirect after successful submit -->
+                    <input type="hidden" name="_next" value="https://deeksha-gupta-web.github.io/Protfolio/thankyou.html">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                     <div id="formStatus" style="margin-top: 1rem; text-align: center; font-weight: 500;"></div>
                 </form>
             </div>
