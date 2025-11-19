@@ -154,4 +154,22 @@ const hamburger = document.getElementById('hamburger');
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
+
         });
+
+function validateForm(event) {
+    // Get form fields
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const statusDiv = document.getElementById('formStatus');
+    if (name === '' || email === '' || message === '') {
+        statusDiv.textContent = "Please fill out all fields before submitting.";
+        statusDiv.style.color = 'red';
+        event.preventDefault();
+        return false;
+    }
+    statusDiv.textContent = ""; // Clear status if all valid
+    return true;
+}
+
